@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#menu-posts-event ul li:nth-child(8),	/* admin menu 						*/
+#em-tickets-form,						/* edit event booking section 		*/
+#em-booking-options,
+#em-event-bookings-stats,				/* edit event booking stats 		*/
+#em-menu-bookings,						/* settings event booking options 	*/
+.em-bookings-dashboard,					/* booking tab main cointainer 		*/
+td.column-extra,						/* event listing booking column 	*/
+th.column-extra {display:none;}
+
+#em-event-bookings {display:block!important;}
+
+
+
+.DTTT_Print #wpbody-content {width:100%;}
+.DTTT_Print #poststuff {width:100%;margin:0;min-width:100%;}
+.DTTT_Print #post-body {width:100%;margin:0;}
+.DTTT_Print .postbox-container {width:100%;}

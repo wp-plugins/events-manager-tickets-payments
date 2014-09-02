@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+html,body {background:#f1f1f1;}
+
+.ui-widget-content a {color:#428BCA;}
+.nav-tab {color:#404040!important;border-radius:4px 4px 0 0;}
+.nav-tab i {display:none;}
+.ui-tabs .ui-tabs-panel {padding:5px 0;}
+#main_tabs > .ui-tabs .ui-tabs-panel {padding:0;}
+.main_tabs {padding:0!important;}
+.main_tabs .nav_btns {position:absolute;z-index:1;top:5px;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a:before,
+.dash_row > div.active:before {border-color:#F1F1F1 rgba(0,0,0,0) rgba(0,0,0,0);}
+.contain.re .btnav {top:-2px;}
+.nav_btns .dd-select {background:#c9c9c9!important;}
+.contain.re .btnav a.btn {margin:0 0 0 1px !important;}
+.contain.re .btnav div.DTTT_container {margin-left:auto;}
+select {height:45px;padding:11px 8px;vertical-align:middle;border-radius:4px;box-shadow:none;}
+
+#main_finance_tabs input[type='text'] {padding:6px 8px;width:406px;color:#404040;font-size:14px;}
+#main_finance_tabs .form-table em {float:left;clear:right;color:#888;line-height:30px;font-size:12px}
+#main_finance_tabs .form-table td {padding:3px 10px;}
+#main_finance_tabs .form-table th {font-size: 1em;margin:1.33em 0;}
+#main_finance_tabs .form-table .iphone {float:left;clear:right;margin-right:10px;}
+#main_finance_tabs .submit {border-top:1px dotted #CCC;margin-bottom:0;padding-bottom:6px;padding-top:10px;}
+#main_finance_tabs select {height:45px;padding:11px 8px;}
+
+	/* Explain block */
+	.hc_explain {border-radius:3px;border-style:solid;border-width:1px;margin:5px 0 15px;background-color:#f2f7fa;border-color:#9dc7d5;opacity:0.8;}
+	.hc_explain p {margin:7px 0;color:#555;font-style:normal;font-weight:normal;font-size:13px;}
+	.hc_explain img {float:left;clear:both;margin:5px 10px;}
+
+
+	.signup-checklist .checklist .task:after,
+	.signup-checklist .checklist .task.complete:after {width:50px;height:26px;background-repeat:no-repeat;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAA0CAYAAADIZmusAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABXRJREFUeNrsmWtoW2UYx5/cmza3pkl6sZtp1yxpm65Oh84PYpGBnUVpEYXJRBQ/uIkoIugHoZ0gyGQgivOjiDDrZJ3ODUUHrptgP2jXZl5i09LO3kybpGnS3JMenyfdKb0k60lzTgouD4RwTk7f9/ze/3N734oYhgEuFggE6Ivbw2gajUYEBTQx/E+sCHJHgXi93qvxeNxQCBCRUMGOzw9PTU21KpXKcGNjo04ulyeEAMCFkiWTyQuCgKASLp/PZykpKQGcBEQiUcBqtT6jUCgu5fqibrc76286na7F7/c7BHGthYWFPxHEgi9NAIBKQCQS0czOzp7icx6tVtvNQpBJ+RwcV28yGAw2oTulr0lthAC9Xj9jNpttfMxRXl5uSCQSny8uLrbnFOzhcPj04OCgeyu38ng8Yzj4LlYJMoIoKytzWyyWu/hSARWfX1paas8paxGE0+k8try8bHK5XAmJROLI9Nzc3NwYyryntLQ0DUFKxGIxUmLUZrNV8aGCSqX6DheqJ+esFY1GXx0aGvpArVYDAtA1oKSALzaAf3OQfW5mZsYdCoUq17oTLgBNPt7Q0FCfLwQuSBcuUt+264hYLL5MAKhG+kNBS26DyhxglUElJtB9Kik7rVkAMJlMTj4gcKxuLhBb1hFcjQ6Hw3GRAKTSlbyQSqVo1VM0D36XsfdvuSIYjUYnupSNr6Yxb0XIKO83Nzd/Qi5FHzJSCdWSYCysg6CYQIgRguAzEyLEeXRTI8bI93m1KBjAx1taWuzoXkmsoisyYkAjzGpMkDsZDAZSYq8Q1RszlQcz1WHMWj159VoYH380NTV1kveQMgTCpliCw5j4C6usDQQ2zFonsqkjzsFXL9XX15eiAhFyI0oAFBPV1dXXcaUaC9XlZlMn5xYFYZToViEqdjU1NcNY8PbvRNtO6qAX7BO8+y3UVlfQ7re4Zy+CFEGKIDtz+ECpbUM3Guc6MHbE8ixdQqKoyE6CkAJCqVAwkLUAQsOIhYSY9o0xZ389yQyMXWSEhpEKNbDb/w/zjeNDuOn7HRzTV0AqljEH6h7lvW1hey1BQHyxKegbOgXu4ET6OpGKwbc3PoZQPMA8bH0qJ5jp0GzW3wxSfYsn6eN+0kgugamXk1sEEm64cOOjVYjV1J0MwfXJH3hbrApJeTcLwcm1CILki8NSXA6qLZXo/e1dWAj/u/lwTWmEDvvxvAGMsor0SaM3tcD9pJENzp9GzsRPX3sFBibPZ9+5xabh3ND7GSHUCj08e/87YKnaL8pXhfmEd94Pgfacgj0Y9jPXRr+C/tHe9PWVkTPo71FoazgCqeSawA6PAgX2/NLkpjFM6rvhcfvLsKtir4hvFTiDDExcWIVIn2kxSbg6ehZSyyloqz+avjcfGYcvB9+DYNS7ORhVtfD0vW+tQpCL5pqCMaC7UIW+vNKvUqbOeP+X8a9BIpaAUbUb+l1fZISo0TZA577X0hAbezauRieNqEJP3k1jNBbp+XnsXPePzk83V1KRGGuDHOLoahutWrsHjtz3NlTqdm+CyFUROmnE7NSXFwjrDpf//ize7+rlNHGVpg66Wl8Hs7EpoxK5glAdYWMkU5BzylqsTx+yPifvsB9DFSS3nZSUeOHBk6BX1PJaYDFGPAhxGLNWz7Z7LRbmoPkJ+SPWoyCTKDI+V6O1wJP3vAGilDTjXoYPw3g5geoYdaDZ3kkjvRRV9gdqO+Gx5pcQZv2eqa6iFV5EJbSyKhDasqnDufvFHV96he2mNjhkex7k0pV/7Jj1dkyxb66rK4UwUgdTM7eTxtttdW8uDoM/Mgf26odAwpTs2FaX00ljcc9ePA4SaIe41g1uHWJva79eVOROBPlPgAEARtLkIFK3a+0AAAAASUVORK5CYII=);}
+
+	.field_c {display:inline-block;position:relative;width:auto;}
+
+
+#wpfooter {border-top: 1px dashed #DDD;}
+#adminmenuback, #adminmenuwrap, #adminmenu {height:100%;}
+
+
+@media (max-width:640px) {
+	.nav-tab b {display:none;}
+	.nav-tab i {display:block;}
+}
