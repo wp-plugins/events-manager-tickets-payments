@@ -18,6 +18,7 @@ add_action( 'plugins_loaded', array( 'EM_HYPECAL', 'init' ) );
 
 final class EM_HYPECAL
 {
+
 	protected static $instance;
 
 	function __construct()
