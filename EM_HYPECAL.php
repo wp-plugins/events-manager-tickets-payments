@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: 	Hypecal Events Tickets Payment
-Version: 		1
+Plugin Name: 	Events Manager - Advanced Ticketing System
+Version: 		1.1
 Plugin URI: 	https://www.hypecal.com
 Description: 	Sell tickets with Events Manager, support any kind of payment cards.
-Author: 		Brice Pissard, Marcus Sykes
+Author: 		hypecal, Marcus Sykes, essfeed
 Author URI: 	http://www.hypecal.com/add-events/ess/
 */
 
@@ -18,7 +18,6 @@ add_action( 'plugins_loaded', array( 'EM_HYPECAL', 'init' ) );
 
 final class EM_HYPECAL
 {
-
 	protected static $instance;
 
 	function __construct()
