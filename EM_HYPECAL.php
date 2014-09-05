@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: 	Events Manager - Advanced Ticketing System
-Version: 		1.1
+Plugin Name: 	Hypecal Ticketing System for Events Manager
+Version: 		1.2
 Plugin URI: 	https://www.hypecal.com
 Description: 	Sell tickets with Events Manager, support any kind of payment cards.
-Author: 		hypecal, Marcus Sykes, essfeed
+Author: 		hypecal, essfeed
 Author URI: 	http://www.hypecal.com/add-events/ess/
 */
 

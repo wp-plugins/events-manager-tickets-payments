@@ -1,35 +1,38 @@
-=== Events Manager - Advanced Ticketing System ===
-Contributors: hypecal, essfeed, netweblogic
-Tags: events, event, event registration, ticket, tickets, ticketing, payment, sell, registration, attendees, event calendar, events calendar, event management, events manager,locations, maps,tax,vat,taxpayer,bank,bank transfer,calendar,happenings, concerts, meetings, festivals,sport,diary,availability,eventbrite,eventful,meetup,facebook,twitter,feedbuzz,foursquare,timeout,event publishers,google,indexation,high ranking,visibility,broadcast, schedule, SEO, booking,billet,billete,places, venue, upcoming, diary, ical, icalendar, organizer, planner,social events,social gatherings,cultural,museum,expo,cinema,movies,theatre,gallery,show,performance,concert,jazz,festival,exhibition,contact,CRM,system,ticket system,ticketing service,door control,qrcode,barcode,ticket scanner,appointments, seminar, summut,wooevents, workshop,woocommerce,e-tickets,widget,customer,buyer,seller,mastercard,visa,paypal,dinners,google checkout,donations
+=== Hypecal Ticketing System for Events Manager ===
+Contributors: hypecal, essfeed
+Tags: events, event, event registration, ticket, tickets, ticketing, payment, sell,registration,attendees,event calendar, events calendar, event management, events manager,locations, maps,tax,vat,taxpayer,bank,bank transfer,calendar,happenings, concerts, meetings, festivals,sport,diary,availability,eventbrite,eventful,meetup,facebook,twitter,feedbuzz,foursquare,timeout,event publishers,google,indexation,high ranking,visibility,broadcast, schedule, SEO, booking,billet,billete,places, venue, upcoming, diary, ical, icalendar, organizer, planner,social events,social gatherings,cultural,museum,expo,cinema,movies,theatre,gallery,show,performance,concert,jazz,festival,exhibition,contact,CRM,system,ticket system,ticketing service,door control,qrcode,barcode,ticket scanner,appointments, seminar, summit,wooevents, workshop,woocommerce,e-tickets,widget,customer,buyer,seller,mastercard,visa,paypal,dinners,google checkout,donations
 Requires at least: 3.2
-Tested up to: 3.9.2
-Stable tag: 1.1
+Tested up to: 4.0
+Stable tag: 1.2
 License: GPLv2 or later
 
-Events Manager Wordpress plugin extension to sell tickets, manage bookings and registrations boost the event's promotion.
+Hypecal extension for the Events Manager plugin to sell tickets, manage bookings and registrations and boost your event's promotion without complex configuration.
 
 == Description ==
 
-**[EVENTS MANAGER](http://wordpress.org/plugins/events-manager/) PLUGIN IS REQUIRED DO BE INSTALLED FIRST**
-**[EVENTS MANAGER - ESS](http://wordpress.org/plugins/events-manager-ess/) PLUGIN IS REQUIRED DO BE INSTALLED FIRST**
+**[EVENTS MANAGER](http://wordpress.org/plugins/events-manager/) PLUGIN IS REQUIRED TO BE INSTALLED FIRST**
+**[EVENTS MANAGER - ESS](http://wordpress.org/plugins/events-manager-ess/) PLUGIN IS REQUIRED TO BE INSTALLED FIRST**
 
-The **Hypecal** plugin add a ticketing service and a payment interface to your website.
-**Hypecal** allows you have your receive payment for your tickets sold.
-This service is free of charge and cost only if a ticket is sold (2.9% / ticket sold).
-If your tickets cost $10 you will make $9.7
+The **Hypecal** plugin for **Events Manager** add a ticketing service and a payment interface to your website.
+**Hypecal** is a ticketing servcice that allows you to receive in one click, payments for your tickets sold.
+This service cost only if a ticket is sold (2.9% / ticket sold). No contract, no subscription fee, no complex settings.
+Your events are manage from your WordPress **Events Manager** interface and the tickets payment is connected to your **Hypecal** account.
+
+If your tickets cost $10 you will make $9.7. You receive the amount 7 business days after the end of your event.
+
 
 **Plugin's Official website**
-Events Manager Advanced Ticketing System : [https://www.hypecal.com](https://www.hypecal.com)
+Hypecal : [https://www.hypecal.com](https://www.hypecal.com)
 
 
 = FEATURES =
-* Manage your event's tickets from the **[Events Manager](http://wordpress.org/plugins/events-manager/)** interface.
-* Customize ticket's prices (tax amount, fees, currency and taxpayer settings).
-* Customize your PDF tickets design.
-* Receive payments from your tickets sold by credit card (Visa, MasterCard, Amex, JCB, Dinners and PayPal), you recive a bank transfer 7 business days after the end of your events (without cost).
-* Create free tickets / open registration to collect membership subscriptions without charges.
+* Manage your events and tickets from the **[Events Manager](http://wordpress.org/plugins/events-manager/)** interface.
+* Customize ticket's prices (tax amount, fee and currency).
+* Customize your PDF ticket's design.
+* Receive payments from your tickets sold by credit card (Visa, MasterCard, Amex, JCB, Dinners). Bank transfer are issued 7 business days after the end of your events (without cost).
+* Create free tickets / open registration to collect membership subscriptions.
 * E-Tickets are automatically sent by email to your attendees.
-* Set your taxpayer settings to apply tax and VAT on your tickets.
+* Set your taxpayer settings to apply tax and VAT on your ticket's price.
 * Easily export a doorlist (CSV or XML) and control the ticket's validity at the event's door (Barcode and QRCode scanner).
 * Revenue reports and summaries
 * Coupon codes for discounts
@@ -41,7 +44,7 @@ Events Manager Advanced Ticketing System : [https://www.hypecal.com](https://www
 
 == Installation ==
 
-**Events Manager**  **Hypecal** Extension requiered **[Events Manager](http://wordpress.org/plugins/events-manager/)** plugin to be installed, then it works like any standard Wordpress plugin, and requires little configuration. If you get stuck, visit the our documentation and support forums.
+**Events Manager**  **Hypecal** Extension requiered **[Events Manager](http://wordpress.org/plugins/events-manager/)** plugin to be installed, then it works like any standard WordPress plugin, and requires little configuration. If you get stuck, visit the our documentation and support forums.
 Whenever installing or upgrading any plugin, or even Wordpress itself, it is always recommended you back up your database first!
 
 = Installing =
@@ -81,6 +84,12 @@ You'll find the bug tracking in: [github.com issues](https://github.com/hypecal/
 
 
 == Changelog ==
+
+= 1.2 =
+* update the open source ESS PHP library (https://github.com/essfeed/php-ess)
+* update the PHP kint-0.9 library (for debugging purpose)
+* set addon images and banner
+* update description
 
 = 1 =
 * submit the first release
