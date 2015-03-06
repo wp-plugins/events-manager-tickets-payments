@@ -133,8 +133,9 @@ final class HC_IO
 	{
 		$root = self::get_root();
 		self::set_common_scripts();
-		wp_enqueue_script(  'hc-global-order', 	$root . '/assets/js/commons/hc.orders.js', 		FALSE, EM_HYPECAL_VERSION, TRUE );
-		wp_enqueue_script(  'hc-order', 		EM_HYPECAL_DIR_URI . 'assets/js/hc_order.js', 	FALSE, EM_HYPECAL_VERSION, TRUE );
+		wp_enqueue_script(  'hc-dependencies-order', $root . '/assets/js/commons/hc.dependencies.orders.min.js', FALSE, EM_HYPECAL_VERSION, TRUE );
+		wp_enqueue_script(  'hc-global-order', 		 $root . '/assets/js/commons/hc.orders.js', 				 FALSE, EM_HYPECAL_VERSION, TRUE );
+		wp_enqueue_script(  'hc-order', 			 EM_HYPECAL_DIR_URI . 'assets/js/hc_order.js', 				 FALSE, EM_HYPECAL_VERSION, TRUE );
 	}
 
 

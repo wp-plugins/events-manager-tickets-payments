@@ -13,6 +13,7 @@ class HC_Admin
 
 	// -- Commons
 	protected static $dashboard_	= array();
+	protected static $HYPECAL_SYNC	= FALSE;
 
 	// -- Booking pages
 	protected static $orders_stats	= NULL;
@@ -31,15 +32,15 @@ class HC_Admin
 
 	private static function get_billing_data()
 	{
-		$EM_SYNC 		= defined( 'EM_ESS_VERSION' );
-		$ESS_SYNC		= defined( 'EM_DIR' );
-		$HYPECAL_SYNC 	= FALSE;
+		$EM_SYNC 			= defined( 'EM_ESS_VERSION' );
+		$ESS_SYNC			= defined( 'EM_DIR' );
+		self::$HYPECAL_SYNC = FALSE;
 
 		if ( $EM_SYNC == TRUE && $ESS_SYNC == TRUE )
 		{
 			if ( @count( HC_Database::get() ) > 0 )
 			{
-				$HYPECAL_SYNC = TRUE;
+				self::$HYPECAL_SYNC = TRUE;
 
 				global $HC_Notices;
 				$api = new HC_API();
@@ -95,7 +96,7 @@ class HC_Admin
 		self::$dashboard_ = array(
 			'ESS'				=> $EM_SYNC,
 			'EVENTS_MANAGER' 	=> $ESS_SYNC,
-			'HYPECAL_SYNC'		=> $HYPECAL_SYNC,
+			'HYPECAL_SYNC'		=> self::$HYPECAL_SYNC,
 			'EVENTS'			=> ( ( @self::$events_stats->TOTAL <=0 	)? FALSE : TRUE ),
 			'BANK'				=> ( ( self::$bank 				== NULL )? FALSE : TRUE ),
 			'TAXPAYER'			=> ( ( self::$taxpayer 			== NULL )? FALSE : TRUE ),
@@ -110,11 +111,11 @@ class HC_Admin
 
 	private static function get_event_sync_data()
 	{
-		$ACTIVATED = FALSE;
+		self::$HYPECAL_SYNC = FALSE;
 
 		if ( @count( HC_Database::get() ) > 0 )
 		{
-			$ACTIVATED = TRUE;
+			self::$HYPECAL_SYNC = TRUE;
 
 			$api = new HC_API();
 
@@ -128,8 +129,15 @@ class HC_Admin
 
 	private static function get_event_edit_data()
 	{
-		if ( @count( HC_Database::get() ) > 0 )
+		$API_credentials_ 	= HC_Database::get();
+		self::$HYPECAL_SYNC = FALSE;
+
+		//d( $API_credentials_ );
+
+		if ( @count( $API_credentials_ ) > 0 )
 		{
+			self::$HYPECAL_SYNC = TRUE;
+
 			global $EM_Event;
 
 			// set event UID from server host name + local Event Manager's eventID
@@ -181,7 +189,14 @@ class HC_Admin
 		}
 		else
 		{
-			?><div><h3 class="orange"><?php _e('You must "Save Draft" or "Publish" this event first to be able to define tickets','dbem'); ?></h3></div><?php
+			if ( self::$HYPECAL_SYNC == TRUE )
+			{
+				?><div><h3 class="orange"><?php _e('You must "Save Draft" or "Publish" this event first to be able to define tickets','dbem'); ?></h3></div><?php
+			}
+			else
+			{
+				?><div><h3 class="orange"><?php _e('You must "Sync" your Wordpress website withe Hypecal.com','dbem'); ?> <a href="<?php echo admin_url();?>edit.php?post_type=<?php _e( defined( 'EM_POST_TYPE_EVENT' )? EM_POST_TYPE_EVENT : 'event', 'dbem' );?>&page=em-hypecal-bookings#general"><?php _e('click here','dbem'); ?></a></h3></div><?php
+			}
 		}
 	}
 

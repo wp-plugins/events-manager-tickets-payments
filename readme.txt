@@ -1,12 +1,12 @@
 === Hypecal Ticketing System for Events Manager ===
-Contributors: hypecal, essfeed
+Contributors: hypecal
 Tags: events, event, event registration, ticket, tickets, ticketing, payment, sell,registration,attendees,event calendar, events calendar, event management, events manager,locations, maps,tax,vat,taxpayer,bank,bank transfer,calendar,happenings, concerts, meetings, festivals,sport,diary,availability,eventbrite,eventful,meetup,facebook,twitter,feedbuzz,foursquare,timeout,event publishers,google,indexation,high ranking,visibility,broadcast, schedule, SEO, booking,billet,billete,places, venue, upcoming, diary, ical, icalendar, organizer, planner,social events,social gatherings,cultural,museum,expo,cinema,movies,theatre,gallery,show,performance,concert,jazz,festival,exhibition,contact,CRM,system,ticket system,ticketing service,door control,qrcode,barcode,ticket scanner,appointments, seminar, summit,wooevents, workshop,woocommerce,e-tickets,widget,customer,buyer,seller,mastercard,visa,paypal,dinners,google checkout,donations
 Requires at least: 3.2
 Tested up to: 4.0
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 
-Hypecal extension for the Events Manager plugin to sell tickets, manage bookings and registrations and boost your event's promotion without complex configuration.
+Hypecal extension for the Events Manager plugin to sell tickets, manage bookings and registrations and boost your event's promotion.
 
 == Description ==
 
@@ -14,11 +14,11 @@ Hypecal extension for the Events Manager plugin to sell tickets, manage bookings
 **[EVENTS MANAGER - ESS](http://wordpress.org/plugins/events-manager-ess/) PLUGIN IS REQUIRED TO BE INSTALLED FIRST**
 
 The **Hypecal** plugin for **Events Manager** add a ticketing service and a payment interface to your website.
-**Hypecal** is a ticketing servcice that allows you to receive in one click, payments for your tickets sold.
+**Hypecal** is a ticketing service that allows you to receive in one click, payments for your tickets sold.
 This service cost only if a ticket is sold (2.9% / ticket sold). No contract, no subscription fee, no complex settings.
 Your events are manage from your WordPress **Events Manager** interface and the tickets payment is connected to your **Hypecal** account.
 
-If your tickets cost $10 you will make $9.7. You receive the amount 7 business days after the end of your event.
+If your tickets cost $10 you will make $9.7. You will receive the amount 7 business days after the end of your event.
 
 
 **Plugin's Official website**
@@ -29,7 +29,7 @@ Hypecal : [https://www.hypecal.com](https://www.hypecal.com)
 * Manage your events and tickets from the **[Events Manager](http://wordpress.org/plugins/events-manager/)** interface.
 * Customize ticket's prices (tax amount, fee and currency).
 * Customize your PDF ticket's design.
-* Receive payments from your tickets sold by credit card (Visa, MasterCard, Amex, JCB, Dinners). Bank transfer are issued 7 business days after the end of your events (without cost).
+* Receive payments from your tickets sold by credit card (Visa, MasterCard, Amex, JCB, Dinners). Bank transfer are issued 7 business days after the end of your events.
 * Create free tickets / open registration to collect membership subscriptions.
 * E-Tickets are automatically sent by email to your attendees.
 * Set your taxpayer settings to apply tax and VAT on your ticket's price.
@@ -84,6 +84,9 @@ You'll find the bug tracking in: [github.com issues](https://github.com/hypecal/
 
 
 == Changelog ==
+
+= 1.3 =
+* debug the configuration file load on windows server (GitHub #issue-76162895)
 
 = 1.2 =
 * update the open source ESS PHP library (https://github.com/essfeed/php-ess)

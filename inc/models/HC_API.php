@@ -68,6 +68,7 @@ final class HC_API extends HC_OAuth2
 						$country_code 	= ( ( strlen( @get_option( 'dbem_location_default_country' ) ) > 1 )? get_option( 'dbem_location_default_country' ) : @$geo_['country_code'] );
 
 						self::$client->dialog_url .=
+							"&auto_signin=".	( ( @count( $local_   ) >  0 )? 'yes' 	  : '' ) .
 							"&language=". 		( ( strlen( $language ) == 2 )? $language : '' ) .
 							"&email=" . 		@$user->data->user_email .
 							"&first_name=". 	@$user->data->user_nicename .
@@ -87,7 +88,7 @@ final class HC_API extends HC_OAuth2
 			{
 				if ( ( $success = self::$client->Process() ) )
 				{
-					//d( self::$client );
+					//dd( self::$client );
 
 					if ( strlen( self::$client->access_token ) > 0 )
 					{

@@ -81,7 +81,7 @@ class HC_Admin_dashboard extends HC_Admin
 				array(
 					'completed' 	=> parent::$dashboard_[ 'HYPECAL_SYNC' ],
 					'title'			=> ( ( parent::$dashboard_[ 'HYPECAL_SYNC' ] )? __( "Hypecal Sync!", 'dbem' ) : __( "Sync your events with Hypecal.com", 'dbem' ) ),
-					'description'	=> __( "Hypecal.com gives you the ability to sell tickets, manage bookings, receive payments and boost your promotion. Your events and tickets are displayed on your Wordpress website, on partners events portals and ticketing reseller services. More info on <a href='".HC_Constants::HYPECAL_WEBSITE."' target='_blank'>hypecal.com</a>", 'dbem' ),
+					'description'	=> __( "Hypecal.com gives you the ability to sell tickets, manage bookings, receive payments and boost your promotion. Your events and tickets are displayed on your Wordpress website and ticket reseller partners. More info on <a href='".HC_Constants::HYPECAL_WEBSITE."' target='_blank'>hypecal.com</a>", 'dbem' ),
 					'link_url'		=> "javascript:hc_admin_bookings.authorize();",
 					'link_name'		=> ( ( self::$dashboard_[ 'HYPECAL_SYNC' ] )? __( "Update Account", 'dbem' ) : __( "Sync now", 'dbem' ) ),
 					'hide_validate' => FALSE
