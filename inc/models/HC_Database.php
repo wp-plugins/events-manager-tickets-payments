@@ -104,6 +104,8 @@ final class HC_Database
 			) );
 		}
 
+		//d( $a_ );
+
 		return $a_;
 	}
 

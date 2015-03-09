@@ -249,7 +249,7 @@ class HC_Admin
 		self::get_event_sync_data();
 
 		$is_activated = ( ( self::$dashboard_[ 'EVENTS_MANAGER' ] == TRUE &&
-					 	  	self::$dashboard_[ 'ESS' 			  ] == TRUE &&
+					 	  	self::$dashboard_[ 'ESS' 			] == TRUE &&
 					 	  	self::$dashboard_[ 'HYPECAL_SYNC'   ] == TRUE
 						)? TRUE : FALSE );
 

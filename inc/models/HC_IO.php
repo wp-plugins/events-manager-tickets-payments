@@ -29,6 +29,8 @@ final class HC_IO
 			add_action( 'em_events_admin_bookings_footer',array( 'HC_Admin',		'get_tickets_form' 		) );
 			add_action( 'admin_print_styles', 			array( 'HC_IO', 			'set_admin_em_styles'	) );
 
+			$null = array();
+
 			// -- edit an event
 			if ( @$_GET[ 'action' ] == 'edit' )
 			{
@@ -37,7 +39,7 @@ final class HC_IO
 			}
 
 			// -- booking section
-			else if ( preg_match_all( "/".HC_Constants::EM_HC_ARGUMENT."/", @$_GET[ 'page' ] ) > 0 )
+			else if ( preg_match_all( "/".HC_Constants::EM_HC_ARGUMENT."/", @$_GET[ 'page' ], $null ) > 0 )
 			{
 				add_action(	'admin_print_scripts', 		array( 'HC_IO',				'set_admin_bookings_scripts' ) );
 				add_action( 'admin_print_styles', 		array( 'HC_IO', 			'set_admin_bookings_styles'	 ) );

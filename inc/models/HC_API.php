@@ -10,7 +10,7 @@
 final class HC_API extends HC_OAuth2
 {
 	var $client_id 			= '1/lB0uoIL16dlip0RT/tUg==';
-	var $client_secret		= 'DWa3TCDETKOcSMBFpy8zNw==';
+	var $client_secret		= 'y70Km03ZAH6Hhc,EPdIdtQ=='; // 'DWa3TCDETKOcSMBFpy8zNw==';
 	var $redirect_uri		= '';
 
 	var $oauth_version 		= '2.0';
@@ -88,7 +88,7 @@ final class HC_API extends HC_OAuth2
 			{
 				if ( ( $success = self::$client->Process() ) )
 				{
-					//dd( self::$client );
+					//dd( self::$client, $_GET );
 
 					if ( strlen( self::$client->access_token ) > 0 )
 					{
